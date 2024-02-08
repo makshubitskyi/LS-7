@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: white;
+    color: white;
+    height: 100%;
+    font-family: "Poppins";
+}
+
+html, 
+body,
+.portfolio {
+    height: 100%;
+}
+
+.portfolio {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.portfolio > div {
+    background: red;
+    padding: 5px;
+    display: grid;
+    align-content: flex-end;
+}
+
+.portfolio-1 { 
+    grid-area: 1 / 1 / 2 / 2; 
+}
+
+.portfolio-2 { 
+    grid-area: 1 / 2 / 3 / 3; 
+}
+
+.portfolio-3 { 
+    grid-area: 1 / 3 / 2 / 4; 
+}
+
+.portfolio-4 { 
+    grid-area: 2 / 1 / 4 / 2; 
+}
+
+.portfolio-5 { 
+    grid-area: 3 / 2 / 4 / 3; 
+}
+
+.portfolio-6 { 
+    grid-area: 2 / 3 / 4 / 4; 
+}
